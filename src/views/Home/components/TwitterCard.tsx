@@ -10,6 +10,7 @@ import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
 import { useFarms } from '../../../state/hooks'
 
+
 const StyledTwitterCard = styled(Card)`
   margin-left: auto;
   margin-right: auto;

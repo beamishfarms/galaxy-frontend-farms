@@ -9,6 +9,8 @@ import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
 import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 
+import Background from './components/background'
+
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page'
 const Home = lazy(() => import('./views/Home'))
@@ -40,6 +42,7 @@ const App: React.FC = () => {
       <ResetCSS />
       <GlobalStyle />
       <Menu>
+        <Background>
         <Suspense fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
@@ -74,6 +77,7 @@ const App: React.FC = () => {
             <Route component={NotFound} />
           </Switch>
         </Suspense>
+        </Background>
       </Menu>
       <NftGlobalNotification />
     </Router>
