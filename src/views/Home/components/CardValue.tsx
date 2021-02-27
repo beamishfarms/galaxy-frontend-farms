@@ -1,6 +1,11 @@
 import React, { useEffect, useRef } from 'react'
 import { useCountUp } from 'react-countup'
+import styled from 'styled-components'
 import { Text } from '@pancakeswap-libs/uikit'
+
+const StyledNumber = styled(Text)`
+  color: #99A3FF;
+`
 
 interface CardValueProps {
   value: number
@@ -27,9 +32,9 @@ const CardValue: React.FC<CardValueProps> = ({ value, decimals, fontSize = '40px
   }, [value, updateValue])
 
   return (
-    <Text bold fontSize={fontSize}>
+    <StyledNumber bold fontSize={fontSize}>
       {prefix}{countUp}
-    </Text>
+    </StyledNumber>
   )
 }
 

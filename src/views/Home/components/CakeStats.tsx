@@ -13,6 +13,10 @@ const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
+const StyledText = styled(Text)`
+  color: rgba(255,255,255,0.5);
+`
+
 
 const Row = styled.div`
   align-items: center;
@@ -44,19 +48,19 @@ const CakeStats = () => {
           {TranslateString(50, 'POLAR Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(50, 'Total POLAR Supply')}</Text>
+          <StyledText fontSize="14px">{TranslateString(50, 'Total POLAR Supply')}</StyledText>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
+          <StyledText fontSize="14px">{TranslateString(999, 'Market Cap')}</StyledText>
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(50, 'Total POLAR Burned')}</Text>
+          <StyledText fontSize="14px">{TranslateString(50, 'Total POLAR Burned')}</StyledText>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(50, 'New POLAR/block')}</Text>
+          <StyledText fontSize="14px">{TranslateString(50, 'New POLAR/block')}</StyledText>
           <Text bold fontSize="14px">{eggPerBlock}</Text>
         </Row>
       </CardBody>

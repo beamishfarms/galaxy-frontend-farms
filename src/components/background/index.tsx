@@ -6,7 +6,7 @@ import background from './background.svg'
 const Background: React.FC = (props) => {
   const { children } = props;
   return(
-  <StyledBackground style={{backgroundColor: '#141B23'}}> 
+  <StyledBackground style={{backgroundColor: '#0e0b22'}}> 
     {children}
   </StyledBackground>
 
@@ -17,4 +17,6 @@ export default Background
 
 const StyledBackground = styled.div`
 background-image: url(${background});
+background-repeat: no-repeat;
+
 `
