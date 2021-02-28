@@ -18,5 +18,6 @@ export default Background
 const StyledBackground = styled.div`
 background-image: url(${background});
 background-repeat: no-repeat;
+background-size: cover;
 
 `

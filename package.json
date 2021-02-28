@@ -32,7 +32,7 @@
   "dependencies": {
     "@binance-chain/bsc-use-wallet": "^0.8.1",
     "@crowdin/crowdin-api-client": "^1.10.1",
-    "@damiand/ui": "^0.10.12",
+    "@damiand/ui": "^0.10.15",
     "@ethersproject/abi": "^5.0.7",
     "@pancakeswap-libs/uikit": "gabbo-dam/galaxy-uikit",
     "@reduxjs/toolkit": "^1.5.0",
